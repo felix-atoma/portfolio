@@ -1,4 +1,4 @@
-import './about.css';
+import './About.css';
 import profile from '../assets/Image1.jpg';
 import myPDF from '../assets/Felix_Atoma_Resume (3).pdf'; // Ensure file exists
 

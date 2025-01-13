@@ -1,4 +1,4 @@
-import "./achievements.css"
+import "./Achievements.css"
 import { TbBulbFilled } from "react-icons/tb";
 import { IoRocket } from "react-icons/io5";
 import { RiTeamFill } from "react-icons/ri";
