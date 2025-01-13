@@ -1,4 +1,4 @@
-import "./home.css";
+import "./Home.css";
 // import video from '../../assets/video.mp4';
 import { TypeAnimation } from 'react-type-animation';
 import HomeData from '../components/HomeData'; // Correct import
