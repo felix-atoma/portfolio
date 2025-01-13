@@ -1,0 +1,66 @@
+.form_container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+  }
+  #contact {
+    padding-top: 50px;
+  }
+  form input {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 22px 15px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 2px var(--main-color);
+    /* box-shadow: var(--box-shawdow); */
+    border-radius: 15px;
+  }
+  form input::placeholder {
+    font-size: 14px;
+    color: #ffff;
+    font-family: Righteous;
+  }
+  input::placeholder:focus {
+    color: orangered;
+  }
+  
+  form textarea {
+    width: 450px;
+    height: 180px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Righteous;
+  }
+  form input,
+  textarea:focus {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 18px;
+    font-family: Righteous;
+  }
+  form label {
+    font-size: 18px;
+    font-family: Righteous;
+    margin-top: 20px;
+  }
+  .success {
+    display: flex;
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .success h3 {
+    color: var(--main-color);
+    font-size: 18px;
+    font-family: Righteous;
+  }
+  
