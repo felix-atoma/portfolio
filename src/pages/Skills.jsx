@@ -1,9 +1,7 @@
-
 import { FaCode } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
 import { MdBusinessCenter } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
-
 
 const Skills = () => {
   return (
@@ -18,7 +16,7 @@ const Skills = () => {
           <div className="achieve-content">
             <h5>Programming Languages</h5>
             <p>
-              Javascript | VB.Net | Database: MOngoDB | MySQL
+              Javascript | Python | PHP | Database: MongoDB | MySQL
             </p>
           </div>
         </div>
@@ -27,10 +25,9 @@ const Skills = () => {
             <FaReact />
           </div>
           <div className="achieve-content">
-            <h5>
-              Frameworks and Technologies</h5>
+            <h5>Frameworks and Technologies</h5>
             <p>
-              React JS | React Native | Node JS | Express Js | HTML | CSS | WordPress
+              React JS | React Native | Node JS | Express JS | HTML | CSS | WordPress
             </p>
           </div>
         </div>
@@ -41,7 +38,7 @@ const Skills = () => {
           <div className="achieve-content">
             <h5>Entrepreneurial Skills</h5>
             <p>
-              Business Development   |   Marketing   |   Coaching   | Consultation
+              Business Development | Marketing | Coaching | Consultation
             </p>
           </div>
         </div>
@@ -52,7 +49,7 @@ const Skills = () => {
           <div className="achieve-content">
             <h5>Other Technical Skills</h5>
             <p>
-              UI / UX   |   Graphic Designs   |   Teaching
+              UI / UX | Graphic Designs | Teaching
             </p>
           </div>
         </div>
@@ -61,12 +58,20 @@ const Skills = () => {
             <GiSkills />
           </div>
           <div className="achieve-content">
-            <h5>
-              Soft Skills</h5>
+            <h5>Soft Skills</h5>
             <p>
-
-              Soft Skills
-              Leadership   |   Communication   |   Problem-solving   |   Team Collaboration
+              Leadership | Communication | Problem-solving | Team Collaboration
+            </p>
+          </div>
+        </div>
+        <div className="achievements__box">
+          <div className="achievements-icon">
+            <GiSkills />
+          </div>
+          <div className="achieve-content">
+            <h5>Language Skills</h5>
+            <p>
+              French (Fluent) | English (Fluent)
             </p>
           </div>
         </div>
@@ -75,4 +80,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Skills;
