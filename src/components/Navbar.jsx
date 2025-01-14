@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import "./navbar.css";
+import "./Navbar.css";
 import data from "./Data";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
