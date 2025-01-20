@@ -1,65 +1,131 @@
 .portfolio-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-    margin-top: 50px;
-    z-index: -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 50px;
+  z-index: -1;
+}
+
+.row {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0.9rem;
+}
+
+.row img {
+  width: 100%;
+  height: 250px;
+  border-radius: 0.9rem;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  background: linear-gradient(rgb(0, 0, 0, 0.1), #000);
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  transition: height 0.5s;
+}
+
+.layer h2 {
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 0 10px 0;
+  font-weight: 600;
+}
+
+.layer p {
+  font-size: 14px;
+}
+
+.link a {
+  font-size: 25px;
+  color: var(--main-color);
+  background-color: #fff;
+  width: 60px;
+  height: 60px; /* Fixed height */
+  align-items: center;
+  display: flex; /* Added display to center */
+  justify-content: center;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+.row:hover img {
+  transform: scale(1.1);
+}
+
+.row:hover .layer {
+  height: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .portfolio-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
-  .row {
-    /* width: 400px; */
-    /* height: 350px; */
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    border-radius: 0.9rem;
-  }
-  .row img {
-    width: 100%;
-    height: 250px;
-    border-radius: 0.9rem;
-    display: block;
-    transition: transform 0.5s;
-  }
-  
-  .layer {
-    background: linear-gradient(rgb(0, 0, 0, 0.1), #000);
-    position: absolute;
-    bottom: 0;
-    height: 0;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 40px;
-    display: flex;
-    flex-direction: column;
-    transition: height 0.5s;
-  }
+
   .layer h2 {
-    color: #fff;
-    font-size: 24px;
-    padding: 10px 0 10px 0;
-    font-weight: 600;
+    font-size: 20px;
   }
+
   .layer p {
-    font-size: 14px;
+    font-size: 12px;
   }
+}
+
+@media (max-width: 768px) {
+  .portfolio-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .row img {
+    height: 200px;
+  }
+
+  .layer h2 {
+    font-size: 18px;
+  }
+
+  .layer p {
+    font-size: 12px;
+  }
+
   .link a {
-    font-size: 25px;
-    color: var(--main-color);
-    background-color: #fff;
-    width: 60px;
-    height: 00px;
-    align-items: center;
-    /* justify-content: center; */
-    padding: 15px;
-    border-radius: 100%;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
   }
-  .row:hover img {
-    transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .row img {
+    height: 150px;
   }
-  .row:hover .layer {
-    height: 100%;
+
+  .layer h2 {
+    font-size: 16px;
   }
-  
+
+  .layer p {
+    font-size: 10px;
+  }
+
+  .link a {
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+  }
+}
